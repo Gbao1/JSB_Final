@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <title>Trang nghe nhạc hú hú</title>
+
+    <script>
+
+    </script>
+</head>
+<body style="font-size: 50px; font-family: 'Itim', cursive;">
+ <div style="background-image: url(https://i.ytimg.com/vi/Pv7JKxRd7jo/maxresdefault.jpg); background-repeat:no-repeat; background-size: cover;">
+
+    <div id="Bai1" style=" display: flex; justify-content: center; padding-left: 1100px; color: rgba(216, 112, 147, 0.747); font-size: 80px;">
+    </div>
+
+    <div id="Bai12" style=" display: flex; justify-content: center; color: rgb(23, 0, 65);">
+    </div>
+
+    <div id="Bai13" style=" display: flex; justify-content: center;">
+
+      <iframe id="1" width="710" height="380" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    </div>
+    
+ </div>
+<div style="height: 100px; width: 100%; background-color: aqua; display: flex; justify-content: center;">Next song</div>
+ <div style="background-image:url(https://i.ytimg.com/vi/fClryzZJGX4/maxresdefault.jpg); background-repeat:no-repeat; background-size: cover;">
+    
+    <div id="Bai2" style=" display: flex; justify-content: center; color: white;">
+    </div>
+
+    <div id="Bai22" style=" display: flex; justify-content: center; color: white;">
+    </div>
+
+    <div id="Bai23" style=" display: flex; justify-content: center;">
+
+      <iframe id="2" width="710" height="380" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+ 
+ </div>
+    <script>
+     let songs = [
+        {
+            title:'Lớp 13',
+            singer: 'Rapper: Tage',
+            src: 'https://www.youtube.com/embed/Pv7JKxRd7jo'
+        },
+        {
+            title: 'Eyes',
+            singer: 'Rapper: GDucky',
+            src: 'https://www.youtube.com/embed/5bNpeT2silk',
+            page: 'test 1.html'
+        }
+     ]
+     
+     let bai1 = document.getElementById("Bai1")
+     let songLop = document.createElement("h2")
+     songLop.innerHTML = songs[0].title
+     bai1.appendChild(songLop)
+     
+     let bai12 = document.getElementById("Bai12")
+     let singer = document.createElement("h2")
+     singer.innerHTML = songs[0].singer
+     bai12.appendChild(singer)
+
+     let bai13 = document.getElementById("Bai13")
+     let yt = document.getElementById("1")
+     yt.src = songs[0].src
+     bai13.appendChild(yt)
+
+     let bai2 = document.getElementById("Bai2")
+     let songEyes = document.createElement("h2")
+     songEyes.innerHTML = songs[1].title
+     bai2.appendChild(songEyes)
+
+     let bai22 = document.getElementById("Bai22")
+     let singer2 = document.createElement("h2")
+     singer2.innerHTML = songs[1].singer
+     bai22.appendChild(singer2)
+
+     let bai23 = document.getElementById("Bai23")
+     let yt2 = document.getElementById("2")
+     yt2.src = songs[1].src
+     bai23.appendChild(yt2)
+    </script>
+</body>
+</html>
